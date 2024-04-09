@@ -1,0 +1,166 @@
+/* import para importar as fontes*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+#portfolio{
+    color:#cc005f;
+    text-align: center;
+    font-size: 100px;
+    margin-top: 100px;
+    font-family: Lora;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+#start{
+    display: flex;
+    justify-content: space-between;
+    background-color:#cc005f;
+    color:black;
+    padding: 1.5rem 4rem;
+}
+
+#start >ul,
+#start >div> ul:nth-child(1){
+    display: flex;
+    gap: 1.25rem;
+    }
+
+#start>ul,
+#start>div>ul{
+    list-style: none;
+}
+    
+a{
+    text-decoration: none;
+    color: inherit;
+}  
+ 
+#grid{
+    width: 80vw;
+    margin: 0 auto;
+    padding: 0 1vw;
+    display: grid;
+    grid-template-areas:
+        "topo topo topo"
+        "l11 l12 l13"
+    ;
+    gap: 2vw;
+}
+
+
+#sobremim {
+    margin-top: 100px;
+    grid-area: topo;
+    background-color: gray;
+    padding: 1.5rem 4rem;
+    color: rgb(0, 0, 0);
+    font-family: Lora;
+  
+}
+
+#escolas{
+    grid-area: l11;
+    background-color: #cc005f;
+    padding: 1.5rem 4rem;
+    color:rgb(0, 0, 0);
+    font-family: Lora;
+}
+
+#profissional {
+    grid-area: l12;
+    background-color: #cc005f;
+    padding: 1.5rem 4rem;
+    font-family: Lora;
+}
+#habilidades{
+    grid-area: l13;
+    background-color: gray;
+    padding: 1.5rem 4rem; 
+    font-family: Lora;
+}
+
+
+
+#eu {
+    
+    background-color:black;
+    padding: 10vh 30vw; 
+}
+
+#eu > div{
+    position: relative;
+    top: -8vh;
+    background-color: beige;
+    width: 150px;
+    height: 150px;
+    margin: 0 calc(50% - 70px);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+#eu > div > div{
+    width:100%;
+    height: 100%;
+    background-image:url();
+    background-size: 200%;
+    background-position: 50% 50%;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+#eu > div > div:hover{
+    background-size: 300%;
+    background-position: 50% 50%;
+}
+
+
+#eu > *{
+    text-align: center;
+    line-height: 1.8rem;
+    letter-spacing: 0.2px;
+    margin-bottom: 1vh;
+}
+
+#eu > h1{
+    font-size: 2.0rem;
+    color: beige;
+    font-family: Lora;
+    font-weight: 100;
+}
+
+#eu > h2{
+    color: rgb(61, 61, 61);
+    font-family: Lora;
+    font-weight: 100;
+}
+
+#eu > p{
+    color: #666;
+    letter-spacing: 0.1px;
+    line-height: 1.3rem;
+     font-family: Lora;
+    font-weight: 100;
+}
+
+@media (max-width: 600px){
+    #grid{
+        grid-template-areas: 
+            "topo"
+            "l11"
+            "l12"
+            "l13"
+        ;
+    }
+    #eu{
+        padding: 10vh 10vw;
+    }
+}
